@@ -1,0 +1,40 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+authors = [
+  {name = "kovacs", email = "itskovacs@proton.me"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+]
+dependencies = [
+  "colorama~=0.4.6",
+  "click~=8.1.7",
+  "prettytable~=3.9.0"
+]
+description = "Python framework boilerplate that allows the creation of agents (plugins) to perform tasks"
+keywords = ["framework boilerplate", "python plugins framework", "python agents"]
+license = {file = "LICENSE"}
+name = "Captain"
+readme = "README.md"
+requires-python = ">=3.6"
+version = "1.0"
+
+[project.scripts]
+captain = "captain.cli:cli"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/itskovacs/Captain/issues"
+Documentation = "https://itskovacs.github.io/Captain"
+Homepage = "https://github.com/itskovacs/Captain"
+Repository = "https://github.com/itskovacs/Captain.git"
+
+[tool.flake8]
+ignore = []
+max-line-length = 120
